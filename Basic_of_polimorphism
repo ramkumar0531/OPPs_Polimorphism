@@ -1,0 +1,13 @@
+# Basic_of_polimorphism
+
+class Book:
+    
+    def __init__(self,pages):
+        self.pages = pages
+    
+    def __add__(self,other):
+        return self.pages + other.pages
+
+Thirukkural = Book(133)
+Thiruvasagam = Book(200)
+print(Thirukkural + Thiruvasagam)
